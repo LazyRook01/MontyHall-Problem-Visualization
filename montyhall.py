@@ -64,7 +64,8 @@ st.write(f"Losses: {losses} ({loss_percentage}%)")
 
 # plot results
 fig, ax = plt.subplots()
-ax.bar(['Staying with original choice', 'Switching doors'], [loss_percentage, win_percentage])
+ax.bar(['Staying with original choice', 'Switching doors'], [loss_percentage, win_percentage], 
+       color=['red', 'green'])
 ax.set_ylabel('Percentage')
 ax.set_title('Monty Hall Problem Results')
 st.pyplot(fig)
